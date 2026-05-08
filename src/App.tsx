@@ -12,6 +12,14 @@ import { DropoutVisualizer } from './components/Visualizers/DropoutVisualizer';
 import { ResNetVisualizer } from './components/Visualizers/ResNetVisualizer';
 import { GANVisualizer } from './components/Visualizers/GANVisualizer';
 import { QLearningVisualizer } from './components/Visualizers/QLearningVisualizer';
+import { SVMVisualizer } from './components/Visualizers/SVMVisualizer';
+import { DecisionTreeVisualizer } from './components/Visualizers/DecisionTreeVisualizer';
+import { PCAVisualizer } from './components/Visualizers/PCAVisualizer';
+import { BatchNormVisualizer } from './components/Visualizers/BatchNormVisualizer';
+import { Word2VecVisualizer } from './components/Visualizers/Word2VecVisualizer';
+import { GNNVisualizer } from './components/Visualizers/GNNVisualizer';
+import { AutoencoderVisualizer } from './components/Visualizers/AutoencoderVisualizer';
+import { DiffusionVisualizer } from './components/Visualizers/DiffusionVisualizer';
 import { QuizComponent } from './components/QuizComponent';
 import { lessons } from './data/lessons';
 import { Cpu, Menu } from 'lucide-react';
@@ -59,6 +67,14 @@ export default function App() {
     resnet: ResNetVisualizer,
     gan: GANVisualizer,
     qlearning: QLearningVisualizer,
+    svm: SVMVisualizer,
+    decision_tree: DecisionTreeVisualizer,
+    pca: PCAVisualizer,
+    batch_norm: BatchNormVisualizer,
+    word2vec: Word2VecVisualizer,
+    gnn: GNNVisualizer,
+    autoencoder: AutoencoderVisualizer,
+    diffusion: DiffusionVisualizer,
   };
 
   const SelectedVisualizer = VisualizerMap[currentLesson.visualizerType];
