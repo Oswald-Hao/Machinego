@@ -9,6 +9,9 @@ import { GradientDescentVisualizer } from './components/Visualizers/GradientDesc
 import { LinearRegressionVisualizer } from './components/Visualizers/LinearRegressionVisualizer';
 import { KMeansVisualizer } from './components/Visualizers/KMeansVisualizer';
 import { DropoutVisualizer } from './components/Visualizers/DropoutVisualizer';
+import { ResNetVisualizer } from './components/Visualizers/ResNetVisualizer';
+import { GANVisualizer } from './components/Visualizers/GANVisualizer';
+import { QLearningVisualizer } from './components/Visualizers/QLearningVisualizer';
 import { QuizComponent } from './components/QuizComponent';
 import { lessons } from './data/lessons';
 import { Cpu, Menu } from 'lucide-react';
@@ -53,6 +56,9 @@ export default function App() {
     linear_regression: LinearRegressionVisualizer,
     kmeans: KMeansVisualizer,
     dropout: DropoutVisualizer,
+    resnet: ResNetVisualizer,
+    gan: GANVisualizer,
+    qlearning: QLearningVisualizer,
   };
 
   const SelectedVisualizer = VisualizerMap[currentLesson.visualizerType];
