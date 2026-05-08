@@ -1,0 +1,6 @@
+{
+  "name": "NeuralQuest",
+  "description": "交互式神经网络可视化学习平台，包含ReLU叠加动画、CNN、RNN等核心概念，并支持PyTorch代码实时生成。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
